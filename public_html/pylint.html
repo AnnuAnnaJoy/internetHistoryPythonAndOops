@@ -154,8 +154,44 @@
     </ul>
     <img src="images/pylint.png" style="height: 300px;width: 1000px;">
     <br><br><br></p>
-    <p style="padding-right: 100px;padding-top: 10px;">
+    <p style="padding-right: 100px;padding-top: -2px;">
+      <span style="font-weight: bold;">Pylint - Errors:</span><br>
+      Pylint has a significant number of checks it can perform. Many are disabled for the purposes of
+      Adafruit Learn guide code. The important checks for this guide are the ones Adafruit does not
+      disable. Pylint has a standard format to its output. When there is a syntax error, it will not
+      show a code rating. Depending on your version of Pylint, you may or may not see the first line
+      informing you what .pylintrc configuration file you're using.
+      <img src="images/pylintt.png" style="height: 300px;width: 1000px;">
+      For the program Calculator we could observe, below mentioned errors while running pylint.
+      <pre>
+    <code>
+      =================================================== FAILURES ===================================================
+      ______________________________________ [pylint] UtilityFiles/__init__.py _______________________________________
+      C:  1, 0: Module name "UtilityFiles" doesn't conform to snake_case naming style (invalid-name)
+      ____________________________________ [pylint] UtilityFiles/absolutePath.py _____________________________________
+      C:  1, 0: Module name "absolutePath" doesn't conform to snake_case naming style (invalid-name)
+      C:  1, 0: Missing module docstring (missing-module-docstring)
+      __________________________________________ [pylint] calc/csvreader.py __________________________________________
+      C:  3, 0: Final newline missing (missing-final-newline)
+      C:  1, 0: Missing module docstring (missing-module-docstring)
+============================= 3 failed, 14 passed, 18 skipped, 2 warnings in 1.40s =============================
+    </code>
+  </pre>
+    </p>
+    <p style="padding-right: 110px;padding-top: -2px;">
+    The error lines are composed of the same four key parts:<br>
+      1. The file name: UtilityFiles.py<br>
+      2. The line containing the error: 1:<br>
+      3. The details of the error: Module name "UtilityFiles" doesn't conform to snake_case naming style<br>
+      4. The Pylint check name: (invalid-name)<br>
 
+      Be aware that Pylint may not show you all the errors at once. It will cascade fail by returning one error
+      and then, once that error is resolved, returning another series of errors. This is why it's important to
+      run Pylint locally, otherwise you'll be waiting for the remote linter to run each time before you can
+      start working on the next set of errors. Once syntax errors have been resolved, your pylint tests will
+      be passed.
+<br>
+      <br>
     </p>
   </div>
 </div>
