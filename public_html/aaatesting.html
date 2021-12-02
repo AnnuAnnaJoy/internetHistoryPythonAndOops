@@ -45,13 +45,13 @@
   <h2><span>Unit Testing using AAA!!</span></h2>
 </div>
 <div class="sidenav">
-  <a href="BirthOfARPA.html">Birth Of ARPA</a>
-  <a href="tcpip.html">TCP/IP</a>
-  <a href="email.html">Email</a>
-  <a href="worldwideweb.html">World Wide Web</a>
-  <a href="webbrowsers.html">Web Browser</a>
-  <a href="google.html">Google</a>
+  <a href="index.html">History of Internet</a>
   <a href="pythonHome.html">Python Home</a>
+  <a href="aaatesting.html">OOPS terminology</a>
+  <a href="pylint.html">Pylint</a>
+  <a href="aaatesting.html">AAA Testing</a>
+  <a href="aaatesting.html">OOPS Principles</a>
+  <a href="aaatesting.html">SOLID Object Oriented Design</a>
 </div>
 <div class="main">
   <p>
@@ -77,11 +77,81 @@
     expected. The pattern focuses each test on a single action. The advantage of this focus is that it clearly
     separates the arrangement of the System Under Test (SUT) and the assertions that are made on it after the
     action. To put it another way, each step in the pattern is a function whose return value is the next
-    step's input.
+    step's input.</p>
     <br>
     Eg:
-    <br>
+    <br><pre><code>
+    assert Calculator.add_number(1, 2) == 3
+  <br></code></pre>
+  <p style="padding-right: 90px;padding-top: 10px;">
+    Here we are checking whether the output of the method  add_number of the Calculator class is 3, when we provide
+    inputs as 1 & 2. In this example inputs are arranged as in Arrange block and code that sets up the conditions
+    for the test action to get result is framed using calling the method of Calculator class as in Act block. At
+    the end assert is used to verify the result.
+    Following is a complete example of a particular AAA testing method: <br>
+    <pre><code>
+    def test_calculator_multiply(setup_cleanup_fixture):<br>
+    """ tests multiplication of two numbers"""<br>
+    # pylint: disable=unused-argument,redefined-outer-name<br>
+    assert Calculator.multiply_numbers(1, 2) == 2<br></p>
+    </code></pre>
+  <p style="padding-right: 100px;padding-top: 10px;">
+    In testing, a fixture provides a defined, reliable and consistent context for the tests. This could include
+    environment (for example a database configured with known parameters) or content (such as a dataset).<br></p>
+  Eg:<br><pre><code>
+  @pytest.fixture<br>
+  def setup_cleanup_fixture():<br>
+  """cleanup fixture"""<br>
+  History.clear_history()<br>
+</code></pre>
+  <p style="padding-right: 110px;padding-top: 10px;">
+  This fixture is used to clear the memory of historical calculations done before. @pytest.fixture is the annotation
+  used for creating fixtures. Then we can provide the steps which we need to use redundantly in the following tests.
+  Overall, the AAA pattern is just intended to be used as a guideline. It's a framework, or a technique of thinking
+  about and organizing your tests such that they're easy to comprehend. There is no documentation included in any
+  package or downloaded tool. Instead, it leaves it up to you, the author, to decide how to best produce and use it.
+  </p>
+  <p style="padding-right: 120px;padding-top: 10px;">
+    <b>Testing with external data using pandas
+    </b><br>
+    Data-driven testing is a framework in which test data is stored in an external location and kept separate
+    from functional tests. Instead of using the same hard-coded values each time the test runs, in data-driven
+    testing, test data and output values are read from files that can be stored in single or multiple data sources
+    such as comma-separated values (CSV) files, Excel sheets, XML, and databases. This allows automation engineers
+    to have a single test script that can run tests for all the test data.
+    Data-driven tests run the same test logic and assertions, but they fetch different input data each time which
+    increases the speed and productivity.
+    Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+    built on top of the Python programming language. It is free software released under the three-clause BSD license.
+    Pandas is mainly used for data analysis. Pandas allows importing data from various file formats such as
+    comma-separated values, JSON, SQL, and Microsoft Excel. Pandas allows various data manipulation operations
+    such as merging, reshaping, selecting, as well as data cleaning, and data wrangling features.
+    A simple way to store big data sets is to use CSV files (comma separated files). CSV files contains plain text
+    and is a well know format that can be read by everyone including Pandas. We can import and use pandas as follows
+    for external data.</p>
+<pre>
+  <code>
+    import pandas as pd
+    df.to_csv("foo.csv") // Write to csv file
+    pd.read_csv("foo.csv") // Reading from csv files
+    df.to_excel("foo.xlsx", sheet_name="Sheet1") // Write to excel files
+    pd.read_excel("foo.xlsx", "Sheet1", index_col=None, na_values=["NA"]) //Read from excel files
+  </code>
+</pre>
+  <p style="padding-right: 130px;padding-top: 10px;">
+Using pandas we can test external data in any format as above which are present in csv, Excel files or HDF5 Store. On
+  reading CSV files Pandas will only return the first 5 rows, and the last 5 rows, so we can use max_rows to return
+  system's maximum rows with the pd.options.display.max_rows statement. One of the most used method for getting a
+    quick overview of the DataFrame, is the head() method.
+    The head() method returns the headers and a specified number of rows, starting from the top. There is also a
+    tail() method for viewing the last rows of the DataFrame.
 
+    The tail() method returns the headers and a specified number of rows, starting from the bottom.
+
+
+
+
+    <br><br><br>
   </p>
 </div>
 <div id="footer">

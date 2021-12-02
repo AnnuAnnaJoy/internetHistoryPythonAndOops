@@ -1,0 +1,22 @@
+{
+  "name": "internethistorypythonandoops",
+  "version": "1.0.0",
+  "description": "[History_Of_Internet](http://sagaofinternetpythonandoops.eastus.azurecontainer.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnuAnnaJoy/internetHistoryPythonAndOops.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnuAnnaJoy/internetHistoryPythonAndOops/issues"
+  },
+  "homepage": "https://github.com/AnnuAnnaJoy/internetHistoryPythonAndOops#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.0"
+  }
+}

@@ -1,86 +1,184 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/img4.ico" type="image/x-icon"/>
-    <title>History Of Internet</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="Brief History of Internet">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Brief History of Internet" />
-    <meta property="og:description" content="Brief History of Internet" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="192" />
-    <meta property="og:image:height" content="192" />
-    <meta property="og:image:alt" content="W3dcos" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="History Of Internet, Python & OOPS">
+    <meta name="author" content="">
+    <link rel="icon" href="images/img4.ico">
+
+    <title>History Of Internet, Python & OOPS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/sidebars.css">
 </head>
+
 <body>
-<div id="header" class="header">
-    <div class="backgrnd">
-        <div class="topnav">
-            <h1>     <img id ="logo" alt="logo" src="images/history.jpeg"/>
 
-
-
-
-                <button id="Home" class="dropbtn tab header-right" onclick="window.location.href='index.html'">Home
-                </button>
-                <button id="Reference" class="dropbtn tab header-right" onclick="window.location.href='reference.html'">Reference
-                </button>
-                <button id="About" class="dropbtn tab header-right" onclick="window.location.href='about.html'">About
-                </button>
-
-
-
-
-                <div style="line-height:60px !important; margin-left: 300px;">Python Overview!</div>
-            </h1>
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img id ="logo" alt="logo" src="images/history.jpeg"/>
+        <a class="navbar-brand header-right" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reference.html">Reference</a>
+                </li>
+            </ul>
+            <div class="navbar-brand" style="line-height:60px !important; margin-left: 300px;font-family: cursive;font-size: 30px">
+                Python Overview!</div>
         </div>
+
+    </nav>
+</header>
+<div class="flex-container b-example-divider">
+    <div class="flex-child sidenavnew flex-column flex-shrink-0 p-3 bg-white">
+
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    Internet History
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="introduction.html" class="link-dark rounded">Overview</a></li>
+                        <li><a href="BirthOfARPA.html" class="link-dark rounded">Birth Of ARPA</a></li>
+                        <li><a href="tcpip.html" class="link-dark rounded">TCP/IP</a></li>
+                        <li><a href="email.html" class="link-dark rounded">Email</a></li>
+                        <li><a href="worldwideweb.html" class="link-dark rounded">World Wide Web</a></li>
+                        <li><a href="webbrowsers.html" class="link-dark rounded">Web Browser</a></li>
+                        <li><a href="google.html" class="link-dark rounded">Google</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                    Python Home
+                </button>
+                <div class="collapse show" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="pythonHome.html" class="link-dark rounded">Overview</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+                    Python Testing
+                </button>
+                <div class="collapse show" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="aaatesting.html" class="link-dark rounded">AAA testing</a></li>
+                        <li><a href="pytest.html" class="link-dark rounded">Pytest</a></li>
+                        <li><a href="pylint.html" class="link-dark rounded">Pylint</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ocollapse" aria-expanded="true">
+                    Python & OOPS
+                </button>
+                <div class="collapse show" id="ocollapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="oopsprinciple.html" class="link-dark rounded">OOPS Principles</a></li>
+                        <li><a href="soliddesign.html" class="link-dark rounded">SOLID Object Oriented Design</a></li>
+                        <li><a href="oopsterm.html" class="link-dark rounded">OOPS terminology</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+
+
     </div>
-</div>
-<div>
-</div>
-<div>
-    <h2><span>Unit Testing using AAA!!</span></h2>
-</div>
-<div class="sidenav">
-    <a href="aaatesting.html">AAA Testing</a>
-</div>
-<div class="main">
+
+    <div class="main-child">
     <p>
-        Unit testing is a software testing method by which individual units of source code are put under various
-        tests to determine whether they are fit for use (Source). It determines and ascertains the quality of your
-        code. Test Runner is a library or a testing tool which reads the source code that contains unit tests and
-        a bunch of settings which can be executed and produces its output to the console or log files. There are
-        different Test Runners available in Python. Pylint is the popular Test Runner used by beginners. Things can
-        quickly spiral out of control for individuals who are just getting started with automated testing. It's
-        like a bottomless hole of acronyms, abbreviations, and long, difficult words. The AAA pattern is a test
-        structure pattern. The “Arrange-Act-Assert” (also AAA and 3A) pattern of testing was observed and named
-        by Bill Wake in 2001.
+        Python has recently become one of the most widely used programming languages on the planet. It's utilized in a
+        variety of applications, including machine learning, website development, and software testing. It is suitable
+        for both developers and non-developers. Python, one of the most widely used programming languages, has been
+        used to construct anything from Netflix's recommendation algorithm to self-driving car software. Python is a
+        general-purpose programming language, which means it can be used for a variety of tasks such as data science,
+        software and web development, automation, and just getting stuff done in general. Python is a programming
+        language that is commonly used to create websites and applications, automate operations, and perform data
+        analysis. Python is a general-purpose programming language, which means it can be used to develop a wide
+        range of applications and isn't specialized for any particular problem. Because of its versatility and
+        beginner-friendliness, it has become one of the most widely used programming languages today.
 
 
     </p>
-    <img src="images/img10.png" style="height: 250px;width: 1100px;">
+    <img src="images/python.jpeg" style="height: 400px;width: 900px;align-content: center;padding-left: inherit">
     <p style="padding-right: 80px;padding-top: 10px;">
-        <b>Importance of AAA :</b> It helps by unifying and clarifying the structure of tests which helps make the test
-        suite much more understandable and manageable.
-        It divides each test into three sections: Arrange, Act, and Assert, each of which is a step toward the
-        next. The Arrange phase puts up the input values for the test. The principal function being tested is
-        prompted by the act step. Finally, the assert step ensures that the function's output matches what was
-        expected. The pattern focuses each test on a single action. The advantage of this focus is that it clearly
-        separates the arrangement of the System Under Test (SUT) and the assertions that are made on it after the
-        action. To put it another way, each step in the pattern is a function whose return value is the next
-        step's input.
-        <br>
-        Eg:
-        <br>
+        Python is frequently used to create a website's or application's back end—the elements that the user doesn't
+        see. Sending data to and from servers, processing data and interfacing with databases, URL routing, and
+        ensuring security are all examples of Python's role in web development. Python has a number of web development
+        frameworks. Django and Flask are two popular ones. Back end engineers, full stack engineers, Python developers,
+        software engineers, and DevOps engineers are some web development positions that require Python. If you
+        find yourself repeating a task frequently, automating it with Python can help you work more efficiently.
+        Scripting is the process of writing code that is used to create these automated procedures. Automation can be
+        used to check for flaws across numerous files, convert files, perform simple math, and delete duplicates in
+        data in the coding industry.
 
     </p>
+    <p style="padding-right: 40px;padding-top: 10px;">
+        <b>Why is Python so popular?</b><br>
+        <ul>
+            <li>
+                Simple syntax: It mimics natural language, so it’s easier to read and understand, makes it quicker to build projects,
+                and faster to improve on them.
+            </li>
+            <li>
+                Versatile: Python can be used for many tasks, from web development to machine learning.
+            </li>
+             <li>
+                 Beginner friendly: making it popular for entry-level coders
+            </li>
+    <li>
+        Open source: it’s free to use and distribute, even for commercial purposes.
+    </li>
+    <li>
+        Python’s archive of modules and libraries, bundles of code that third-party users have created to expand Python’s capabilities.
+    </li>
+    <li>
+        Active and large community : They contribute to Python’s pool of modules and libraries, and acts as a helpful resource for other programmers.
+    </li>
+    <br>
+    <br>
+        </ul>
+    </p>
 </div>
-<div id="footer">
-    <footer> <small>&copy; Copyright 2021, History Of Internet Corporation Inc &nbsp;&nbsp;|&nbsp;&nbsp;
+</div>
+    <footer class="footer">
+        <div class="container">
+    <span class="text-muted" style="padding-left: 80px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; Copyright 2021, Internet History Pythoon & OOPS Inc &nbsp;&nbsp;|&nbsp;&nbsp;
 
-        Website Raised by Annu  &nbsp;&nbsp;|&nbsp;&nbsp; Contact us: mailto: aaj45@njit.edu  &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsagaofinternetpythonandoops.eastus.azurecontainer.io%2F" style="text-decoration: none">W3CValidator link</a> </small> </footer>
-</div>
+        Website Raised by Annu  &nbsp;&nbsp;|&nbsp;&nbsp; Contact us: mailto: aaj45@njit.edu  &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsagaofinternetpythonandoops.eastus.azurecontainer.io%2F" style="text-decoration: none">W3CValidator link</a>
+    </span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
 </body>
+</html>
