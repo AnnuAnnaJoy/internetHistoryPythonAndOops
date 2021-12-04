@@ -107,58 +107,190 @@
     </div>
 
     <div class="main-child">
-        <p>
-            Python has recently become one of the most widely used programming languages on the planet. It's utilized in a
-            variety of applications, including machine learning, website development, and software testing. It is suitable
-            for both developers and non-developers. Python, one of the most widely used programming languages, has been
-            used to construct anything from Netflix's recommendation algorithm to self-driving car software. Python is a
-            general-purpose programming language, which means it can be used for a variety of tasks such as data science,
-            software and web development, automation, and just getting stuff done in general. Python is a programming
-            language that is commonly used to create websites and applications, automate operations, and perform data
-            analysis. Python is a general-purpose programming language, which means it can be used to develop a wide
-            range of applications and isn't specialized for any particular problem. Because of its versatility and
-            beginner-friendliness, it has become one of the most widely used programming languages today.
-
-
+        <p style="width: 1100px;margin-top: 5px">
+        <h5>What is Object-Oriented Programing?</h5>
+            The term <b>“Object-Oriented Programming” (OOP)</b> was coined by Alan Kay around 1966 while he was at grad
+            school. The language called Simula was the first programming language with the features of
+            Object-oriented programming. It was developed in 1967 for making simulation programs, in which
+            the most important information was called objects. OOPs has been adapted by various programming
+            languages including Python Today its application is in almost every field such as Real-time systems,
+            Artificial intelligence, and expert systems, Client-server systems, Object-oriented databases, and
+            many more. The goal of Object-Oriented Programming (OOP) is to create "objects." An object is a collection of
+        variables and functions that are linked together. These variables are frequently referred to as object
+        attributes, and functions are referred to as object behavior. These items provide the software a more
+        organized and logical structure.<br>
+        <img src="images/img.png" style="height: 300px;width: 700px;align-content: center;padding-left: 20%">
         </p>
-        <img src="images/python.jpeg" style="height: 400px;width: 900px;align-content: center;padding-left: inherit">
-        <p style="padding-right: 80px;padding-top: 10px;">
-            Python is frequently used to create a website's or application's back end—the elements that the user doesn't
-            see. Sending data to and from servers, processing data and interfacing with databases, URL routing, and
-            ensuring security are all examples of Python's role in web development. Python has a number of web development
-            frameworks. Django and Flask are two popular ones. Back end engineers, full stack engineers, Python developers,
-            software engineers, and DevOps engineers are some web development positions that require Python. If you
-            find yourself repeating a task frequently, automating it with Python can help you work more efficiently.
-            Scripting is the process of writing code that is used to create these automated procedures. Automation can be
-            used to check for flaws across numerous files, convert files, perform simple math, and delete duplicates in
-            data in the coding industry.
-
+        <p style="padding-right: 60px;padding-top: 2px;">
+        <br>For example, a car is an object. If we consider the car as an object, its properties include its color,
+        model, price, and brand, among others. Acceleration, slowing down, and changing gears would be its
+        behavior/function. Object-Oriented programming is famous because it implements the real-world entities
+        like objects, hiding, inheritance, etc in programming. It makes visualization easier because it is close
+        to real-world scenarios. Major OOP (object-oriented programming) concepts in Python include Class, Object, Method, Inheritance, Polymorphism, Data Abstraction, and Encapsulation. Let’s learn about each one of them with examples.
         </p>
-        <p style="padding-right: 40px;padding-top: 10px;">
-            <b>Why is Python so popular?</b><br>
-        <ul>
-            <li>
-                Simple syntax: It mimics natural language, so it’s easier to read and understand, makes it quicker to build projects,
-                and faster to improve on them.
-            </li>
-            <li>
-                Versatile: Python can be used for many tasks, from web development to machine learning.
-            </li>
-            <li>
-                Beginner friendly: making it popular for entry-level coders
-            </li>
-            <li>
-                Open source: it’s free to use and distribute, even for commercial purposes.
-            </li>
-            <li>
-                Python’s archive of modules and libraries, bundles of code that third-party users have created to expand Python’s capabilities.
-            </li>
-            <li>
-                Active and large community : They contribute to Python’s pool of modules and libraries, and acts as a helpful resource for other programmers.
-            </li>
+            <h6>Classes & Objects:</h6>
+        <p style="padding-right: 70px;padding-top: 2px;">
+            A class is a collection of objects.  Unlike the primitive data structures, classes are data
+            structures that the user defines. They make the code more manageable. In python, we declare a class
+            with the keyword "class" followed by class name and semicolon. Only the object's description or
+            blueprint is created when we define a class. There will be no memory allocation until the object
+            is created. Real data or information is stored in the objector instance. The term "instantiation"
+            refers to the process of producing a new object or instance of a class. Let's see a calculator class as example:
+        </p>  <pre><code>
+        """ This is the calculator program"""
+        from calc.historyMod.history import History
+
+        class Calculator:
+             """ This is the Calculator class"""
+
+        history = []
+
+         @staticmethod
+        def add_number(tuple_values: tuple):
+        """ adds number to result"""
+        # create an addition object using the factory we created on the calculation class
+        History.add_addition_calculation(tuple_values)
+        return True
+
+        @staticmethod
+        def subtract_number(tuple_values: tuple):
+        """ subtract number from result"""
+        History.add_subtraction_calculation(tuple_values)
+        return True
+    </code></pre>
+        <p style="padding-right: 60px;padding-top: 2px;">
+        Here we could see a class with different methods on it. Methods are the functions that we used to
+        describe the behavior of the objects. Now, there are four fundamental concepts of Object-oriented
+        programming – <b>Inheritance, Encapsulation, Polymorphism, and Data abstraction.</b> We will have a look
+        how these principles are depicted in calculator class.
+</p>
+        <h6>Encapsulation</h6>
+        <p style="padding-right: 80px;padding-top: 2px;">
+     In the above calculator code we could see that an object of History class is used to get the historical data.
+     After the addition or subtraction operation the values are sent to the History class by using the methods in
+    the History class using history object. Encapsulation is a way to ensure security. Basically, it hides the
+    data from the access of outsiders. In the above program we have provided all variables as public, so that it will
+    be available everywhere outside the class, if they imported the History class. If we need to actually
+     prevent the access of attributes/methods from outside the scope of a class, you can use “private members“.
+    In order to declare the attributes/method as private members, use double underscore ( __ ) in the prefix.
+    Such as – self.__name or def __method(); If we declare the variables and methods as protected, then the
+    attribute and method are protected and should not be used outside the access of the class and sub-classes
+    but can be accessed by class methods and objects. In our Calculator project we use encapsulation
+    in all of our classes. For example, our Calculator class encapsulates the add, subtract, multiply and
+    divide methods. There are getter and setter methods that can be used to get and set any private attributes
+    respectively if it is required to change the private attributes as part of the business requirement.
+    This allows us to keep a track of who is changing/setting the private attribute newly further allowing us
+    to backtrack and resolve issues, if any. In the example given, we have used a getter method which will get
+            the actual attribute’s value from the protected attribute.</p>
+            <pre><code>
+    class Calculation:
+    """Calculation class"""
+
+    def __init__(self, values: tuple):
+        """ constructor method"""
+        self.values = Calculation.convert_args_to_tuple_of_float(values)
+
+    @classmethod
+    def create(cls, values: tuple):
+        """ factory method"""
+        return cls(values)
+
+    @staticmethod
+    def convert_args_to_tuple_of_float(values):
+        """ standardize values to list of floats"""
+        list_values_float = []
+        for item in values:
+            list_values_float.append(float(item))
+        return tuple(list_values_float)
+    </code></pre>
+     <h6>Inheritance</h6>
+     <p style="padding-right: 90px;padding-top: 2px;">
+         Inheritance is the procedure in which one class inherits the attributes and methods of another class.
+         The class whose properties and methods are inherited is known as Parent class. The class that inherits the
+         properties from the parent class is the Child class. Along with the inherited properties and methods, a child
+         class can have its own properties and methods.<br>
+         Different types of Inheritance are as follows:<br>
+
+         <b>Single inheritance</b>: Single level inheritance enables a derived class to inherit characteristics from a
+         single parent class.<br>
+         <b>Multilevel Inheritance </b>: Multi-level inheritance enables a derived class to inherit properties from an
+         immediate parent class which in turn inherits properties from its parent class (in a manner like,
+         child→parent→grandparent). <br>
+         <b>Hierarchical Inheritance</b>: Hierarchical level inheritance enables more than one derived class to inherit
+         properties from a parent class.<br>
+         <b>Multiple Inheritance</b>: Multiple level inheritance enables one derived class to inherit properties from
+         more than one base class.<br>
+         <img src="images/Types-of-Inheritance.jpeg" style="height: 400px;width: 800px;align-content: center;padding-left: 10%">
+         <br>
+         We can have a look into the Addition class as an example of
+         Inheritance. Calculation is the base class of addition which is extended by Addition.
+         <pre>
+        <code>
+        from calc.calculation.calculation import Calculation
+        class Addition(Calculation):
+        """Addition class"""
+
+        def get_result(self):
+        """ addition """
+        total_sum = 0.0
+        for value in self.values:
+            total_sum += value
+        return total_sum
+        </code>
+    </pre>
+        <p style="padding-right: 90px;padding-top: 2px;">
+        On extending the calculation class all the methods in it will be accessible for the Addition class. In our Calculator
+        project we have a parent class Calculation that has a tuple “values” and a method to convert “values” to a list of
+        floats. We then have Addition, Subtraction, Multiply and Divide classes that inherit Calculation so that they can use
+        Calculation's members. After inheriting from the Calculation, the children only need to implement a “get_result”
+        function, which needs to be different for each of the operations performed by the children.
+</p>
+    <h6>Polymorphism</h6>
+        <p style="padding-right: 100px;padding-top: 2px;">
+            Polymorphism means having many forms. In OOP it refers to the functions having the same names but
+            carrying different functionalities. One example of this is python's “print” method. For example,
+            the print method has custom implementations for integers, strings, lists. You don't need to be
+            concerned with letting the function know what type of data is being printed.<br>
+            <img src="images/Polymorphism.png" style="height: 300px;width: 600px;align-content: center;padding-left: 10%">
+            <br>The base class ‘Calculation’ defines a method skeleton for get_result() which the child classes
+            inherit and re-defines them according to their requirement. The ‘Multiplication’ and "Division'
+            classes redefines it to multiply and divide all the numbers it receives in a list and returns the
+            result of the numbers. In the same manner, all the other child classes inherit the properties of
+            base class and molds/re-defines the get_result() method to satisfy their requirements. For
+            polymorphism to occur, there has to be inheritance between classes.
+        </p>
+        <h6>Abstraction</h6>
+        <p style="padding-right: 110px;padding-top: 2px;">
+            We use Abstraction for hiding the internal details or implementations of a function and showing
+            its functionalities only. This is similar to the way you know how to drive a car without knowing
+            the background mechanism. Any class with at least one abstract function is an abstract class.
+            In order to create an abstraction class first, you need to import ABC class from abc module. This
+            lets you create abstract methods inside it. ABC stands for Abstract Base Class.
+            We cannot create an object for the abstract class with the abstract method. Abstraction can be
+            done via Inheritance only.<br>
+            <img src="images/abs.jpeg" style="height: 300px;width: 600px;align-content: center;padding-left: 5%">
             <br>
+            In our Calculator project, we can instantiate an Addition object, pass it the list of values, do
+            the calculation and get the result by writing the following code.
+            <pre><code>
+            from abc import ABC, abstractmethod
+            class Calculation(ABC):
+            """ calculation abstract base class"""
+            def __init__(self,values: tuple):
+        """ constructor method"""
+            self._values = Calculation.convert_args_to_list_float(values)
+
+            class Addition(Calculation):
+            """ calculation addition class"""
+            def get_result(self):
+            """returns the addition result"""
+            return sum(self.values)
+    </code></pre>
+        In above case, definitions are hidden from the user. The Abstract method is just providing a
+        declaration. The child classes need to provide the definition.
+
             <br>
-        </ul>
+        <br><br><br>
         </p>
     </div>
 </div>

@@ -40,7 +40,7 @@
                 </li>
             </ul>
             <div class="navbar-brand" style="line-height:60px !important; margin-left: 300px;font-family: cursive;font-size: 30px">
-                OOPS GLOSSARY!</div>
+                OOPS Terminology used in Python!</div>
         </div>
 
     </nav>
@@ -107,59 +107,83 @@
     </div>
 
     <div class="main-child">
-        <p>
-            Python has recently become one of the most widely used programming languages on the planet. It's utilized in a
-            variety of applications, including machine learning, website development, and software testing. It is suitable
-            for both developers and non-developers. Python, one of the most widely used programming languages, has been
-            used to construct anything from Netflix's recommendation algorithm to self-driving car software. Python is a
-            general-purpose programming language, which means it can be used for a variety of tasks such as data science,
-            software and web development, automation, and just getting stuff done in general. Python is a programming
-            language that is commonly used to create websites and applications, automate operations, and perform data
-            analysis. Python is a general-purpose programming language, which means it can be used to develop a wide
-            range of applications and isn't specialized for any particular problem. Because of its versatility and
-            beginner-friendliness, it has become one of the most widely used programming languages today.
-
-
-        </p>
-        <img src="images/python.jpeg" style="height: 400px;width: 900px;align-content: center;padding-left: inherit">
-        <p style="padding-right: 80px;padding-top: 10px;">
-            Python is frequently used to create a website's or application's back end—the elements that the user doesn't
-            see. Sending data to and from servers, processing data and interfacing with databases, URL routing, and
-            ensuring security are all examples of Python's role in web development. Python has a number of web development
-            frameworks. Django and Flask are two popular ones. Back end engineers, full stack engineers, Python developers,
-            software engineers, and DevOps engineers are some web development positions that require Python. If you
-            find yourself repeating a task frequently, automating it with Python can help you work more efficiently.
-            Scripting is the process of writing code that is used to create these automated procedures. Automation can be
-            used to check for flaws across numerous files, convert files, perform simple math, and delete duplicates in
-            data in the coding industry.
-
-        </p>
-        <p style="padding-right: 40px;padding-top: 10px;">
-            <b>Why is Python so popular?</b><br>
-        <ul>
-            <li>
-                Simple syntax: It mimics natural language, so it’s easier to read and understand, makes it quicker to build projects,
-                and faster to improve on them.
-            </li>
-            <li>
-                Versatile: Python can be used for many tasks, from web development to machine learning.
-            </li>
-            <li>
-                Beginner friendly: making it popular for entry-level coders
-            </li>
-            <li>
-                Open source: it’s free to use and distribute, even for commercial purposes.
-            </li>
-            <li>
-                Python’s archive of modules and libraries, bundles of code that third-party users have created to expand Python’s capabilities.
-            </li>
-            <li>
-                Active and large community : They contribute to Python’s pool of modules and libraries, and acts as a helpful resource for other programmers.
-            </li>
+        <p style="width: 1020px">
+           <b> Object </b>- A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.
             <br>
             <br>
-        </ul>
+            <b>Class </b>– A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.
+            <br>
+            <br>
+            <b>Constructor</b> – Constructors are generally used for instantiating an object. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. In Python the __init__() method is called the constructor and is always called when an object is created.
+            <br>
+            <br>
+            <b>Factory</b> – In object-oriented programming, a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
+            <br>
+            <br>
+            <b>Instantiation </b>– Instantiating a class is creating a copy of the class which inherits all class variables and methods.
+            <br>
+            <br>
+            <b>Namespace</b> - A namespace is a system that has a unique name for each and every object in Python.
+            An object might be a variable or a method. Python itself maintains a namespace in the form of a
+            Python dictionary. Its Name (which means name, a unique identifier) + Space(which talks something
+            related to scope). Here, a name might be of any Python method or variable and space depends upon the
+            location from where is trying to access a variable or a method. In a Python program, there are four types of namespaces:
+
+            Built-In,
+            Global,
+            Enclosing &
+            Local
+            These have differing lifetimes. As Python executes a program, it creates namespaces as necessary and deletes them when they’re no longer needed. Typically, many namespaces will exist at any given time.
+            <br>
+            <br>
+            <b>Fixture</b> – pytest fixtures are functions attached to the tests which run before the test function is executed. Fixtures are a set of resources that have to be set up before and cleaned up once the Selenium test automation execution is completed.
+            <br>
+            <br>
+            <b>Type hint</b> – Type hinting is a formal solution to statically indicate the type of a value within your Python code.
+            <br>
+            <br>
+            <b>Type cast</b> – Type casting is a method used to change the variables/ values declared in a certain data type into a different data type to match the operation required to be performed by the code snippet. In python, this feature can be accomplished by using constructor functions like int(), string(), float(), etc.
+            <br>
+            <br>
+            <b>Unit test</b> – Unit Testing is the first level of software testing where the smallest testable parts of a software are tested. This is used to validate that each unit of the software performs as designed.
+            <br>
+            <br>
+            <b>Method</b> – A method in object-oriented programming (OOP) is a procedure associated with a message and an object.
+            <br>
+            <br>
+            <b>Property</b> – A property, in some object-oriented programming languages, is a special sort of class member, intermediate in functionality between a field (or data member) and a method.
+            <br>
+            <br>
+            <b>The self </b> - Class methods must have an extra first parameter in the method definition. When we
+            call a method of this object as myobject.method(arg1, arg2), this is automatically converted by
+            Python into MyClass.method(myobject, arg1, arg2) – this is all the special self is about.
+            <br>
+            <br>
+            <b>Class method</b> – The @classmethod decorator is a built-in function decorator that is an expression that gets evaluated after your function is defined. The result of that evaluation shadows your function definition.
+            A class method receives the class as an implicit first argument, just like an instance method receives the instance.
+            <br>
+            <br>
+            <b>Static method</b> – Static methods, much like class methods, are methods that are bound to a class rather than its object. They do not require a class instance creation. So, they are not dependent on the state of the object.
+            <br>
+            <br>
+            <b>Class variable</b> - Class variables are also known as static variables, and they are declared outside a method, with the help of the keyword 'static'.
+            Static variable is the one that is common to all the instances of the class. A single copy of the variable is shared among all objects.
+            <br>
+            <br>
+            <b>Façade </b>– Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework.
+            <br>
+            <br>
+            <b>Design patterns</b> - A design pattern provides a general reusable solution for the common problems that occur in software design. The pattern typically shows relationships and interactions between classes or objects. The idea is to speed up the development process by providing well-tested, proven development/design paradigms.
+            <br>
+            <br>
+            <br>
+            <br>
+
         </p>
+
+
+
+
     </div>
 </div>
 <footer class="footer">

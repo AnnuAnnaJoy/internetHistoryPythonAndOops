@@ -40,7 +40,7 @@
         </li>
       </ul>
       <div class="navbar-brand" style="line-height:60px !important; margin-left: 300px;font-family: cursive;font-size: 30px">
-        Python Overview!</div>
+        Python - AAA Testing!</div>
     </div>
 
   </nav>
@@ -115,21 +115,32 @@
     different Test Runners available in Python. Pylint is the popular Test Runner used by beginners. Things can
     quickly spiral out of control for individuals who are just getting started with automated testing. It's
     like a bottomless hole of acronyms, abbreviations, and long, difficult words. The AAA pattern is a test
-    structure pattern. The “Arrange-Act-Assert” (also AAA and 3A) pattern of testing was observed and named
-    by Bill Wake in 2001.
-
+    structure pattern. The <b>“Arrange-Act-Assert”</b> (also AAA and 3A) pattern of testing was observed and named
+    by Bill Wake in 2001.<br>
+As an example we have created addition_test.py as follows which will be used to test whether addition works fine.
 
   </p>
   <img src="images/img10.png" style="height: 250px;width: 1100px;">
   <p style="padding-right: 80px;padding-top: 10px;">
-    <b>Importance of AAA :</b> It helps by unifying and clarifying the structure of tests which helps make the test
+    <b>Importance of AAA :</b> <br>
+    It helps by unifying and clarifying the structure of tests which helps make the test
     suite much more understandable and manageable.
     It divides each test into three sections: Arrange, Act, and Assert, each of which is a step toward the
     next. The Arrange phase puts up the input values for the test. The principal function being tested is
     prompted by the act step. Finally, the assert step ensures that the function's output matches what was
     expected. The pattern focuses each test on a single action. The advantage of this focus is that it clearly
     separates the arrangement of the System Under Test (SUT) and the assertions that are made on it after the
-    action. To put it another way, each step in the pattern is a function whose return value is the next
+    action. <br>
+    In the code below, we can see that for each test case, we have 3 sections viz. Arrange, Act and Assert.
+    In ARRANGE, we are defining the values and instantiating an object of Addition Class and by passing values to
+    the addition method we have done with the ACT part as well.
+    <pre>
+    <code>
+      nos = (1.0, 2.0)
+    addition = Addition(nos)
+    </code>
+  </pre>
+    To put it another way, each step in the pattern is a function whose return value is the next
     step's input.</p>
     <br>
     Eg:
